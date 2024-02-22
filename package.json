@@ -1,0 +1,58 @@
+{
+  "name": "solana-frontend-quickstart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css",
+    "tailwind-watch": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "start": "npm run tailwind && react-app-rewired --openssl-legacy-provider start",
+    "build": "npm run tailwind && react-app-rewired --openssl-legacy-provider build ",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.3.11",
+    "@solana/wallet-adapter-base": "^0.6.0",
+    "@solana/wallet-adapter-react": "^0.12.2",
+    "@solana/wallet-adapter-react-ui": "^0.4.2",
+    "@solana/wallet-adapter-wallets": "^0.10.0",
+    "@solana/web3.js": "^1.89.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.8",
+    "autoprefixer": "^10.4.17",
+    "bn.js": "^5.2.1",
+    "borsh": "^0.6.0",
+    "buffer-layout": "^1.2.2",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "tailwindcss": "^0.0.0-insiders.0ec6678",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
+}
